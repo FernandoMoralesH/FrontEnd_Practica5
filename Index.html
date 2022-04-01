@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset=" UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpomrt" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+<!--Titulo-->
+</title>
+
+  <h1>"Pasteleria: Los perritos cosmicos"</h1>
+
+</title>
+<!--Imagen-->
+<img id="logo" src= "https://blogger.googleusercontent.com/img/a/AVvXsEiz-j5VtPZjJfvrPPP6-ueeJAb50OiVS49sd5b8sf1f8udbqM2Ej1sTDxbgIUf45yAi9j5Jowit3AL4KXn_iFFjxrWedJlKVTopQf3efJsWpQLtsoTk2MAzjnkaScjzhfbitiOAjWqPfqnv4ISUOMA1BSO3VylwsieUP5_aTTDJLGT77i17nAsq3ea-Og=s320"; br; alt="Extensos sabores y adornos" width="350px" height="350px">
+
+<head>
+  <body id="tapiz">
+    
+    <div id="title">
+      <h2>{{titulo}}</h2>
+      <br>
+      <!--Menu de pasteles-->
+      <h3>{{menu_pastel}}</h3>
+      <ul>
+        <li v-for="pastel of pasteles" >{{pastel}}</li>
+      </ul>
+      <!-- Menu de Adornos--> 
+      <h3>{{menu_adornos}}</h3>
+      <ul>
+        <li v-for="adorno of adornos" >{{adorno.Nombre}} <br><b>"Especialidad: "</b> {{adorno.Especialidad}} </li>
+      </ul>
+      <!--stock-->
+      <h3>{{menu_adornos}}</h3>
+      <ul>
+        <li v-for="adorno of adornos" >{{adorno.Nombre}} <br><b>"Especialidad: "</b> {{adorno.Especialidad}} - <b class="color">"Existencias":  {{adorno.Cantidad}} </b>
+        <span v-if="adorno.Cantidad === 0" > - Sin Stock</span> </li>
+      </ul>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="./script.js"> </script> 
+    </div>
+
+  </body>
+</head>
+<footer>
+
+    <hr>
+          
+    <a href=".\FormularioPasteleria.html">
+
+     <input type="button" value="Hacer pedido"> 
+
+    </a><br>
+    <br>
+    <h4>Dirigirse a datos de la Empresa:</h4>
+
+     <a href="Datos pasteleria.html"> <img src="img/Boton.jpg"  width="50px"> </a> 
+
+</footer>

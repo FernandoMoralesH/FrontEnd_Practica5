@@ -1,0 +1,56 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <meta charset=" UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="style2.css" rel="stylesheet" type="text/css">
+
+<head>
+        <!--Datos de tabla-->
+        <body>
+            <header>
+            <title> <h1>Pasteleria: Los perritos Cosmicos</h1></title>
+           
+            </header>
+            <h2>Datos de la Empresa:</h2>
+            <table id="Tabla" style="width: 100%">
+
+                <tr>
+                    <th>Direccion</th>
+                    <th>Telefono</th>
+                    <th>Horarios</th>
+                </tr>
+                <tr>
+                    <td>Avenida Simepre viva, 376, Colonia Los Olmos, Cuautitlan, Mexico</td>
+                    <td> 01 55 12345678</td> 
+                    <td>Lunes a Viernes de 9:00 a 17 Hrs</td>
+                </tr>
+
+            </table>
+
+            <hr>
+<!-- Verificar existencias y agreagar nuevos productos-->
+            <div id="existencias">
+                <h1>Agregar existencias</h1>
+                <h3>{{menu_adornos}}</h3>
+                <input type="text" name="" id="" v-model="nuevoAdorno" placeholder="Nombre de Nuevo pastel" size="50px"><br>
+                <input type="number" name="" id="" v-model.number="actualizarCantidad" placeholder="Cantidad del nuevo pastel" size="30px">
+                <button v-on:click="agregarAdorno">Agregar</button>
+
+                <br>
+
+                <ul>
+                  <li v-for="adorno of adornos" >{{adorno.Nombre}} <br><b>"Especialidad: "</b> {{adorno.Especialidad}} - 
+                    <input type="number" v-model.number="adorno.Cantidad"> {{adorno.Nombre}}
+                    <button @click="adorno.Cantidad++" > + </button>
+                    <button @click="adorno.Cantidad--" > - </button>
+                  <span v-if="adorno.Cantidad === 0" > - Sin Stock</span> </li>
+                </ul>
+                <h4>Total: {{sumarAdornos}} </h4>
+
+                <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+                <script src="./script2.js"> </script> 
+            </div>
+        </body>
+</head>
+       

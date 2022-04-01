@@ -1,0 +1,34 @@
+    header {
+        background-color: rgb(168, 181, 253);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+    h2 {
+        background-color: rgb(158, 189, 236);
+        padding: 10px;
+    }
+
+        table, th, td {
+            border: 1px solid pink;
+
+        }
+        th, td{
+            padding: 10px;
+        }
+        table #Tabla{
+            background-color: aqua;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #existencias {
+            padding-top: 30px;
+            background: url(img/papel_tapiz1.jpg) no-repeat;
+            background-size: cover;
+            padding-bottom: 50px;
+        }
